@@ -13,7 +13,7 @@ describe('Cart Icon Increment', () => {
         loginPage.clickLogin();
         cy.url().should('include', '/inventory');
 
-        cy.wait(4000);
+        cy.wait(3000);
 
         cy.get('#add-to-cart-sauce-labs-backpack').click();
 
