@@ -2,21 +2,15 @@ name: Cypress Tests
 
 on: push
 
-
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Cypress run
         uses: cypress-io/github-action@v6
-
-        
-# 3. Install dependencies using lockfile
-      - name: Install dependencies
-        run: npm ci # requires package-lock.json
-
-         
