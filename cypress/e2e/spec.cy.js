@@ -14,7 +14,6 @@ describe('Cart Icon Increment', () => {
         cy.url().should('include', '/inventory');
 
         cy.wait(2500);
-
         cy.get('#add-to-cart-sauce-labs-backpack').click();
 
         cy.get('.shopping_cart_container') // or '#cart-icon span'
