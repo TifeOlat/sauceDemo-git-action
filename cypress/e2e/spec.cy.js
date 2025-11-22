@@ -21,7 +21,7 @@ describe('Cart Icon Increment', () => {
         .and('have.text', '1'); // Assert it shows '1' (or whatever the expected count is after adding one item)
         
         cy.scrollTo('top');
-        cy.wait(2000)
+        cy.wait(2500)
 
     
     });
